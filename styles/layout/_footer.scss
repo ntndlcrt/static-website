@@ -1,0 +1,31 @@
+@use "../base/grid";
+@use "../base/typography/type-scale";
+
+.footer {
+  &__section {
+    padding: 4.8rem 0;
+  }
+
+  &__top,
+  &__bottom {
+    @include grid.page-grid;
+  }
+
+  &__top {
+    margin-bottom: 16rem;
+    @include type-scale.fluid-type(430px, 1440px, 16px, 24px);
+  }
+
+  &__bottom {
+    font-size: 16px;
+  }
+
+  &__menu {
+    margin-left: 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 16px;
+    }
+  }
+}

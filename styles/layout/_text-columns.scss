@@ -1,0 +1,9 @@
+@use "../base/grid";
+
+.text-columns {
+  @include grid.page-grid;
+
+  .button {
+    margin-left: auto;
+  }
+}
